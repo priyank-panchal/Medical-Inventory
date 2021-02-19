@@ -1,0 +1,13 @@
+<?php
+session_start();
+if(isset($_SESSION['elogin']))
+{
+session_destroy();
+header("location:emp_login.php");
+}
+else
+{
+session_destroy();
+header("location:index.php");
+}
+?>

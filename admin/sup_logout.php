@@ -1,0 +1,13 @@
+<?php
+session_start();
+if(isset($_SESSION['suplogin']))
+{
+session_destroy();
+header("location:suplogin.php");
+}
+else
+{
+session_destroy();
+header("location:index.php");
+}
+?>
